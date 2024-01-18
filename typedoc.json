@@ -1,0 +1,10 @@
+{
+  "extends": ["./typedoc.base.json"],
+  "entryPoints": ["packages/*"],
+  "name": "Typescript Decorator Validation",
+  "entryPointStrategy": "packages",
+  "includeVersion": false,
+  "excludeInternal": true,
+  "plugin": ["@mxssfd/typedoc-theme"],
+  "theme": "my-theme"
+}

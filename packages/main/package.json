@@ -1,0 +1,32 @@
+{
+  "name": "@brunotot/core",
+  "version": "1.0.0",
+  "description": "React hooks for Chakra components",
+  "keywords": [],
+  "author": "Bruno Tot <brunotot10000@gmail.com>",
+  "homepage": "https://github.com/brunotot/typescript-decorator-validation#readme",
+  "license": "MIT",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunotot/typescript-decorator-validation.git",
+    "directory": "packages/main"
+  },
+  "bugs": {
+    "url": "https://github.com/brunotot/typescript-decorator-validation/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "dev": "pnpm build:fast --watch",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src"
+  }
+}
