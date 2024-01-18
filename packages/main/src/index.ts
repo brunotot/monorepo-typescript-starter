@@ -37,3 +37,10 @@ export function multiply(a: number, b: number) {
 export function divide(a: number, b: number) {
   return a / b;
 }
+
+/**
+ * Prints "Hello world!" to the console.
+ */
+export function main() {
+  console.log("Hello world!");
+}
