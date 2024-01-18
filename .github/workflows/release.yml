@@ -25,9 +25,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Generate docs
-        run: pnpm build:docs
-
       - name: Create release Pull Request or publish to NPM
         id: changesets
         uses: changesets/action@v1
