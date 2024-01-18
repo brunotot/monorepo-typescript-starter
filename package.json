@@ -4,7 +4,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunotot/typescript-decorator-validation.git"
+    "url": "git+https://github.com/brunotot/monorepo-typescript-starter.git"
   },
   "version": "1.0.0",
   "description": "",

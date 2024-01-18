@@ -27,3 +27,13 @@ export function subtract(a: number, b: number) {
 export function multiply(a: number, b: number) {
   return a * b;
 }
+
+/**
+ * Divides two numbers.
+ * @param a - The first number.
+ * @param b - The second number.
+ * @returns The quotient of the two numbers.
+ */
+export function divide(a: number, b: number) {
+  return a / b;
+}
