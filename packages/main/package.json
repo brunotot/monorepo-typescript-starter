@@ -1,6 +1,6 @@
 {
   "name": "@brunotot/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hooks for Chakra components",
   "keywords": [],
   "author": "Bruno Tot <brunotot10000@gmail.com>",
