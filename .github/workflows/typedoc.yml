@@ -1,4 +1,4 @@
-name: TypeDoc
+name: Publish TypeDoc-generated docs
 
 on:
   push:
@@ -15,10 +15,10 @@ jobs:
       - name: 🛒 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install
+      - name: 🤳 Install
         uses: ./.github/composite-actions/install
 
-      - name: Build
+      - name: 🚧 Build
         run: pnpm build
 
       - name: 🔥 Generate documentation

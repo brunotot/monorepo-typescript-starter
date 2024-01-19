@@ -4,19 +4,19 @@ description: "Sets up Node.js and runs install"
 runs:
   using: composite
   steps:
-    - name: Install dependencies
+    - name: 🤳 Install dependencies
       uses: pnpm/action-setup@v2.2.4
       with:
         version: 8
 
-    - name: Setup Node.js
+    - name: 🚧 Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version-file: ".nvmrc"
         registry-url: "https://registry.npmjs.org"
         cache: "pnpm"
 
-    - name: Setup Git User
+    - name: ⚙️ Setup Git User
       shell: bash
       run: |
         git config --global user.email "brunotot10000@gmail.com"

@@ -1,4 +1,4 @@
-name: Release
+name: Release packages
 
 on:
   push:
@@ -16,16 +16,16 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
+      - name: 🛒 Checkout branch
         uses: actions/checkout@v4
 
-      - name: Install
+      - name: 🤳 Install
         uses: ./.github/composite-actions/install
 
-      - name: Build
+      - name: ⚙️ Build
         run: pnpm build
 
-      - name: Create release Pull Request or publish to NPM
+      - name: 🌟 Create release PR or publish to NPM directly
         id: changesets
         uses: changesets/action@v1
         with:
@@ -37,7 +37,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create @dev release
+      - name: ⚙️ Create @dev release
         if: steps.changesets.outputs.published != 'true'
         run: |
           git checkout main
