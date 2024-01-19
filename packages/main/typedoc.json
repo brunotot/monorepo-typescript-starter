@@ -1,13 +1,4 @@
 {
   "extends": ["../../typedoc.base.json"],
-  "entryPoints": ["src/index.ts"],
-  "compilerOptions": {
-    "target": "ESNext",
-    "outDir": "docs",
-    "baseUrl": ".",
-    "paths": {
-      "@main": ["src"],
-      "@main/*": ["src/*"]
-    }
-  }
+  "entryPoints": ["src/index.ts"]
 }

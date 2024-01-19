@@ -19,6 +19,7 @@
     "release:dev": "changeset publish --tag dev",
     "build": "for package in packages/*/; do (cd $package && pnpm run build); done",
     "build:docs": "typedoc",
+    "build:docs:dev": "npx typedoc --validation.notDocumented --treatValidationWarningsAsErrors",
     "format:check": "prettier --check packages --cache",
     "format:write": "prettier --write packages --cache"
   },

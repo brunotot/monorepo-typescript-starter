@@ -4,7 +4,7 @@
   "description": "React hooks for Chakra components",
   "keywords": [],
   "author": "Bruno Tot <brunotot10000@gmail.com>",
-  "homepage": "https://github.com/brunotot/typescript-decorator-validation#readme",
+  "homepage": "https://github.com/brunotot/monorepo-typescript-starter#readme",
   "license": "MIT",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.mjs",
@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunotot/typescript-decorator-validation.git",
+    "url": "git+https://github.com/brunotot/monorepo-typescript-starter.git",
     "directory": "packages/main"
   },
   "bugs": {
-    "url": "https://github.com/brunotot/typescript-decorator-validation/issues"
+    "url": "https://github.com/brunotot/monorepo-typescript-starter/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

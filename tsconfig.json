@@ -18,5 +18,10 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@main": ["packages/main/src"],
+      "@main/*": ["packages/main/src/*"],
+    },
   },
 }

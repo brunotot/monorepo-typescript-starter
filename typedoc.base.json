@@ -1,4 +1,11 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "includeVersion": true
+  "includeVersion": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@main": ["packages/main/src"],
+      "@main/*": ["packages/main/src/*"]
+    }
+  }
 }
