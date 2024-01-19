@@ -1,5 +1,11 @@
 # @brunotot/core
 
+## 1.1.1
+
+### Patch Changes
+
+- 9097983: prevent commit for undocumented public code
+
 ## 1.1.0
 
 ### Minor Changes
