@@ -5,7 +5,7 @@ import Inquirer from "inquirer";
 import path from "path";
 
 const ROOT_DIR = "../";
-const EXCLUDE_DIRS = ["node_modules", "scripts", "docs"];
+const EXCLUDE_DIRS = ["node_modules", "scripts", "docs", "README.md", "CHANGELOG.md"];
 
 const CLI_CURRENT_YEAR_KEY = "2024";
 const CLI_GITHUB_AUTHOR_HANDLE_KEY = "brunotot";
