@@ -1,7 +1,7 @@
 {
   "extends": ["./typedoc.base.json"],
   "entryPoints": ["packages/*"],
-  "name": "Typescript Decorator Validation",
+  "name": "Set of starter files for a TypeScript monorepo setup",
   "entryPointStrategy": "packages",
   "includeVersion": false,
   "excludeInternal": true,

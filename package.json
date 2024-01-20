@@ -1,14 +1,20 @@
 {
   "name": "monorepo-typescript-starter",
+  "version": "1.0.0",
+  "description": "Set of starter files for a TypeScript monorepo setup",
+  "main": "index.js",
   "private": true,
   "type": "module",
+  "author": "Bruno Tot <brunotot10000@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brunotot/monorepo-typescript-starter.git"
   },
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "bin": {
+    "my-cli": "./scripts/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "prepare": "husky install",
@@ -23,9 +29,6 @@
     "format:check": "prettier --check packages --cache",
     "format:write": "prettier --write packages --cache"
   },
-  "keywords": [],
-  "author": "Bruno Tot <brunotot10000@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^18.4.4",
@@ -35,6 +38,7 @@
     "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.56.0",
     "husky": "^8.0.0",
+    "inquirer": "^9.2.12",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
     "tsup": "^8.0.1",
