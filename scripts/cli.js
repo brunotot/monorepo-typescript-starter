@@ -4,8 +4,7 @@ import fs from "fs";
 import Inquirer from "inquirer";
 import path from "path";
 
-const ROOT_DIR = "../";
-const EXCLUDE_DIRS = ["node_modules", "scripts", "docs", "README.md", "CHANGELOG.md"];
+const EXCLUDE_DIRS = ["node_modules", "scripts", "docs", "README.md", "CHANGELOG.md", "init.sh"];
 
 const CLI_CURRENT_YEAR_KEY = "2024";
 const CLI_GITHUB_AUTHOR_HANDLE_KEY = "brunotot";
@@ -16,7 +15,7 @@ const CLI_GITHUB_REPO_HANDLE_KEY = "monorepo-typescript-starter";
 
 const currentYear = new Date().getFullYear();
 
-function execReplace(searchText, replacementText, directory = ROOT_DIR) {
+function execReplace(searchText, replacementText, directory = ".") {
   const files = fs.readdirSync(directory).filter(file => !EXCLUDE_DIRS.includes(file));
 
   for (const file of files) {
