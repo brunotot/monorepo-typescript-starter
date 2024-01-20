@@ -13,7 +13,7 @@
     "url": "git+https://github.com/brunotot/monorepo-typescript-starter.git"
   },
   "bin": {
-    "init": "./scripts/cli.js"
+    "init": "./scripts/init.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\"",

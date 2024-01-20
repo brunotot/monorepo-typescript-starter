@@ -12,19 +12,25 @@
    cd [REPO_NAME]
    ```
 
-3. Install dependencies
+3. Remove existing `.git` directory
+
+   ```sh
+   rm -rf .git
+   ```
+
+4. Install dependencies
 
    ```sh
    pnpm install
    ```
 
-4. Change specific variables through interactive CLI
+5. Change specific variables through interactive CLI
 
    ```sh
    npx init
    ```
 
-5. Open VSCode and start coding!
+6. Open VSCode and start coding!
    ```sh
    code .
    ```
