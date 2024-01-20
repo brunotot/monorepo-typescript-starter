@@ -6,6 +6,8 @@ git clone "$REPO_SRC" "$REPO_NAME"
 cd "./$REPO_NAME"
 rm -rf .git
 git init
+pnpm install
+npx my-cli
 if command -v code >/dev/null 2>&1; then
     code .
 fi
